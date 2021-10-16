@@ -24,6 +24,6 @@ public class StudentController {
         return STUDENTS.stream()
                 .filter(student -> studentId.equals(student.getStudentId()))
                 .findFirst()
-                .orElseThrow(() -> new IllegalArgumentException(String.format("Student %f does not exits.", studentId)));
+                .orElseThrow(() -> new IllegalArgumentException(String.format("Student %s does not exits.", studentId)));
     }
 }
