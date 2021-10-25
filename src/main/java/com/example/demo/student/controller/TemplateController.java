@@ -11,7 +11,12 @@ import org.springframework.web.servlet.ModelAndView;
 public class TemplateController {
 
     @GetMapping("login")
-    public String getLoadingView() {
+    public String getLogin() {
         return "login";
+    }
+
+    @GetMapping("courses")
+    public String getCourses() {
+        return "courses";
     }
 }
