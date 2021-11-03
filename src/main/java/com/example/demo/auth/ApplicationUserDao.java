@@ -1,4 +1,4 @@
-package com.example.demo.student.auth;
+package com.example.demo.auth;
 
 import java.util.Optional;
 

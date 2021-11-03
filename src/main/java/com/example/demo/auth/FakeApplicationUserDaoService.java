@@ -1,4 +1,4 @@
-package com.example.demo.student.auth;
+package com.example.demo.auth;
 
 import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
-import static com.example.demo.student.security.ApplicationUserRole.*;
+import static com.example.demo.security.ApplicationUserRole.*;
 
 @Repository(value="fake")
 public class FakeApplicationUserDaoService implements ApplicationUserDao {

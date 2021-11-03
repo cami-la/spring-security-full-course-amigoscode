@@ -1,9 +1,7 @@
-package com.example.demo.student.controller;
+package com.example.demo.controller;
 
 import com.example.demo.student.model.Student;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
@@ -29,7 +27,7 @@ public class StudentManagementController {
     }
 
     @PostMapping
-    @PreAuthorize("hasAuthority('student:write'))")
+//    @PreAuthorize("hasAuthority('student:write'))")
     public void registerNewStudent(@RequestBody Student student) {
         System.out.println("registerNewStudent");
         System.out.println(student);
